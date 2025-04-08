@@ -1,95 +1,86 @@
-# Editor de Markdown
+# Markdown Editor
 
-Este é um editor de Markdown simples e funcional, desenvolvido com HTML, CSS, JavaScript e utilizando a biblioteca Showdown para conversão de Markdown para HTML. O editor conta com uma interface intuitiva para facilitar a edição e visualização de documentos em Markdown. Também foi desenvolvido como um aplicativo de desktop usando Electron.
+This is a simple and functional Markdown editor developed with HTML, CSS, JavaScript, and the **Showdown** library for converting Markdown to HTML. The editor features an intuitive interface to make editing and previewing Markdown documents easy. It has also been developed as a desktop application using **Electron**.
 
-## Funcionalidades
+## Features
 
-**Edição de Markdown**: Permite criar e editar arquivos Markdown diretamente no navegador ou em um aplicativo Electron.
+**Markdown Editing**: Allows users to create and edit Markdown files directly in the browser or in an Electron-based desktop app.
 
-**Pré-visualização em tempo real:** A visualização do conteúdo em Markdown é atualizada instantaneamente à medida que o usuário digita.
+**Live Preview**: The Markdown content preview updates instantly as the user types.
 
-**Formatação de texto:**
-**Negrito:** Ctrl+B
+**Text Formatting:**
 
-**Itálico:** Ctrl+I
+- **Bold**: Ctrl+B  
+- **Italic**: Ctrl+I  
+- **Headings**: Insert H1 and H2 headings  
+- **Lists**: Create ordered and unordered lists  
+- **Blockquotes**: Insert block quotes  
+- **Code Blocks**: Insert code blocks  
+- **Links and Images**: Easy interface to add links and images using URLs  
 
-**Título e Subtítulo:** Inserção de títulos (H1 e H2)
+**Dark Mode**: Toggle between light and dark themes for a better user experience.
 
-**Listas:** Criação de listas numeradas e não numeradas
+**Save & Load Files**: Save Markdown content locally or load existing `.md` files.
 
-**Citações:** Inserção de citações
+## Installation
 
-**Código:** Inserção de blocos de código
+To install and run this editor on your machine, follow these steps:
 
-**Inserção de links e imagens:** Interface simples para adicionar links e imagens ao texto com URLs.
+**Prerequisites**
 
-**Modo escuro:** Alterna entre o modo claro e o modo escuro para melhorar a experiência do usuário.
+Make sure [Node.js](https://nodejs.org/) (version 14 or higher) is installed on your system.
 
-**Salvamento e carregamento de arquivos:** Salve o conteúdo Markdown localmente ou carregue arquivos existentes.
+**Steps**
 
-## Instalação
-Para instalar e executar este editor em sua máquina, siga as etapas abaixo:
+* Clone the repository:
 
-**Pré-requisitos**
-
-[Node.js](https://nodejs.org/) (versão 14 ou superior) deve estar instalado na sua máquina.
-
-**Passos**
-
-* Clone o repositório:
-
-```
+```bash
 git clone https://github.com/andersonmoegel/Editor-de-Markdown.git
 cd editor-markdown
 ```
 
-* Instale as dependências do projeto:
+* Install project dependencies:
 
-```
+```bash
 npm install
-
 ```
 
-* Execute o aplicativo Electron:
+* Run the Electron app:
 
-```
+```bash
 npm start
-
 ```
 
-Isso abrirá o editor de Markdown em uma janela de aplicativo Electron.
+This will open the Markdown editor in an Electron app window.
 
+## How to Use
 
-## Como Usar
+**Text Editing**: Write your content in the editor area.
 
+**Text Formatting**: Select text and use the toolbar buttons to apply formatting.
 
-**Edição de texto:** Escreva seu conteúdo no campo de edição.
+**Preview Content**: The Markdown preview updates in real-time as you type.
 
-**Formatar texto:** Selecione o texto e use os botões da barra de ferramentas para aplicar a formatação desejada.
+**Save Markdown**: Click the save icon to download the Markdown file.
 
-**Visualizar conteúdo:** A visualização do Markdown será atualizada em tempo real à medida que você digita.
+**Load Markdown**: Click the open icon to load an existing Markdown file.
 
-**Salvar Markdown:** Clique no ícone de salvar para baixar o arquivo Markdown.
+## Additional Functionality
 
-**Carregar Markdown:** Clique no ícone de abrir para carregar um arquivo Markdown existente.
+The editor content is automatically saved to the browser's `localStorage` for session persistence.
 
-## Funcionalidade Adicional
+Dark mode can be toggled on or off using the button in the top-right corner.
 
-O conteúdo de texto do editor é salvo automaticamente no localStorage do navegador para persistência entre sessões.
+## Technologies Used
 
-A interface de modo escuro pode ser ativada ou desativada usando o botão no canto superior direito.
+**Electron**: Framework for building cross-platform desktop apps with web technologies.
 
-## Tecnologias Utilizadas
+**Showdown.js**: Library to convert Markdown into HTML.
 
-**Electron:** Framework para construir aplicativos desktop usando tecnologias web.
+**HTML & CSS**: Used to design the user interface.
 
-**Showdown.js:** Biblioteca para converter Markdown em HTML.
+**JavaScript**: Manages app logic and event handling.
 
-**HTML e CSS:** Para construção da interface do usuário.
+## License
 
-**JavaScript:** Lógica de interação e manipulação de eventos.
-
-
-##Licença
-
-Este projeto é licenciado sob a MIT License.
+This project is licensed under the MIT License.
